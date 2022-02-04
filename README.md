@@ -1,2 +1,2 @@
 # sandrolenz.ch
-Code for my website (WIP)
+Code for my website
