@@ -1,0 +1,6 @@
+## General Redirects ##
+Redirect 301 /github https://github.com/sandrolenz
+
+## TBZ Redirects ##
+Redirect 301 /tbz-arbeitslosigkeit https://essentials.swissdox.ch/View/view/document/text?documentid=44188111&filter_la=de&sortorder=score%20desc&SEARCH_sc=swissdox&SEARCH_query=arbeitslosigkeit&SEARCH_pubDate_lower=2021-09-20&SEARCH_pubDate_upper=2022-03-21&SEARCH_tiall=&SEARCH_source=&SEARCH_author=&client_timezoneoffset=-60&from_client_timezoneoffset=-120&to_client_timezoneoffset=-60&application=RECHERCHE&toolbartext=false
+Redirect 301 /tbz-m133 https://tbz.sandrolenz.ch/m133
