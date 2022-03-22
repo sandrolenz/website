@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Nova+Mono');
+:root {
+    --font-header: 'Nova Mono', monospace;
+    --font-text: 'Open Sans', sans-serif;
+    --color-theme: #F1EEDB;
+    --color-bg: #282B24;
+    --animation-duration: 60s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: var(--font-text);
+    color: var(--color-theme);
+    background: var(--color-bg);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    margin: 1rem 0.5rem 0;
+}
+
+.container h1 {
+    font-family: var(--font-header);
+    font-size: calc(4rem + 2vw);
+    text-transform: uppercase;
+}
+
+.container p {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    margin: 1.5rem 0 3rem;
+}
+
+.ghost {
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    animation: hoverGhost calc(var(--animation-duration)/2) ease-in-out 2;
+}
+
+.ghost:before {
+    content: var(--animation-sentence);
+    color: var(--color-theme);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    text-align: center;
+    line-height: 2;
+    padding: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    animation: calc(var(--animation-duration)/8) calc(var(--animation-duration)*3/16) ease-out forwards, showNewText calc(var(--animation-duration)/8) calc(var(--animation-duration)*27/40) ease-out forwards, showFinalText calc(var(--animation-duration)/8) var(--animation-duration) ease-out forwards;
+}
+
+@keyframes hoverGhost {
+    25% {
+        transform: translateX(20vw);
+    }
+    75% {
+        transform: translateX(-20vw);
+    }
+}
