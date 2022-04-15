@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Home | sandrolenz.ch</title>
   <meta charset="utf-8">
@@ -11,6 +12,167 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="icon" type="image/png" href="assets/img/sandro-cartoon.png">
 </head>
+
+<body>
+
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <img src="assets/img/logo.png" alt="sandrolenz">
+      <p>Sandro Lenz</p>
+    </a>
+    <p class="device-notification--message">I'm sorry. This website has been designed to be viewed on a larger screen.
+    </p>
+  </div>
+
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="">
+              <img src="assets/img/logo.png" alt="sandrolenz">
+              <p>Sandro Lenz</p>
+            </a>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>Home</span></li>
+              <li><span>Projects</span></li>
+              <li><span>Contact</span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <li class="l-section section section--is-active">
+              <div class="intro">
+                <div class="intro--banner">
+                  <h1>Hello world!<br>My name is<br>Sandro Lenz</h1>
+                  <img src="assets/img/introduction-visual.png" alt="Welcome">
+                </div>
+                <div class="intro--options">
+                  <a>
+                    <h3>Work</h3>
+                    <p>I am currently in the third year of my IT-apprenticeship.</p>
+                  </a>
+                  <a>
+                    <h3>Programming</h3>
+                    <p>I frequently program in my freetime. I have used, among others, JavaScript and Python.</p>
+                  </a>
+                  <a>
+                    <h3>Gaming</h3>
+                    <p>I also play <strong>a lot</strong> of video games. Mostly Minecraft and other sandbox games or
+                      simulators.</p>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="work">
+                <h2>Some of my projects</h2>
+                <div class="work--lockup">
+                  <ul class="slider">
+                    <li class="slider--item slider--item-left">
+                      <a href="#0">
+                        <div class="slider--item-image">
+                          <img src="assets/img/projects-placeholder.png" alt="Placeholder">
+                        </div>
+                        <p class="slider--item-title">Empty slot</p>
+                        <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
+                          do.</p>
+                      </a>
+                    </li>
+                    <li class="slider--item slider--item-center">
+                      <a href="https://www.github.com/sandrolenz/M157-Telefonbuch" target="_blank">
+                        <div class="slider--item-image">
+                          <img src="assets/img/school_m157-telefonbuch.png" alt="M157 Phonebook">
+                        </div>
+                        <p class="slider--item-title">M157 - Phone book</p>
+                        <p class="slider--item-description">A school project for M157, where we built an interface for
+                          an employee phone book.</p>
+                      </a>
+                    </li>
+                    <li class="slider--item slider--item-right">
+                      <a href="https://github.com/sandrolenz/M133-Webshop" target="_blank">
+                        <div class="slider--item-image">
+                          <img src="assets/img/school_m133-webshop.png" alt="M133 Webshop">
+                        </div>
+                        <p class="slider--item-title">M133 - Webshop</p>
+                        <p class="slider--item-description">An ongoing school project for M133, where the goal is to
+                          build a working webshop.</p>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="slider--prev">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="slider--next">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path
+                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="intro">
+                <div class="imprint--banner">
+                  <h1>Contact</h1>
+                </div>
+                <div class="intro--options">
+                  <a href="mailto:sl@sandrolenz.ch">
+                    <h3>E-Mail</h3>
+                    <p>sl@sandrolenz.ch</p>
+                  </a>
+                  <a href="https://www.github.com/sandrolenz" target="_blank">
+                    <h3>GitHub</h3>
+                    <p>github/sandrolenz</p>
+                  </a>
+                  <a>
+                    <h3>Responsible for this page</h3>
+                    <p><strong>Sandro Lenz</strong><br>9246 Niederbüren<br>Switzerland</p>
+                  </a>
+                  <a>
+                    <h3></h3>
+                    <p></p>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="outer-nav">
+      <li class="is-active">Home</li>
+      <li>Projects</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+</body>
+
+</html>
+=======
 <body>
 
 <!-- notification for small viewports and landscape oriented smartphones -->
