@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<!-- Regular data -->
+	<meta charset="utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+	<!-- Description -->
+	<meta name="author" content="Sandro Lenz" />
+	<meta name="description" content="I design & build digital products." />
+	<meta name="keywords" content="sandro,lenz,sandro lenz" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Open Graph data -->
+	<meta property="og:site_name" content="Sandro Lenz" />
+	<meta property="og:title" content="Sandro Lenz" />
+	<meta property="og:description" content="I design & build digital products." />
+	<meta property="og:image" content="https://sandrolenz.ch/img/thumbnail.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://sandrolenz.ch" />
+
+	<!-- Title -->
+	<title>M157 - Sandro Lenz</title>
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Sandro Lenz">
+	<meta name="twitter:description" content="I design & build digital products.">
+	<meta name="twitter:url" content="https://sandrolenz.ch">
+	<meta name="twitter:image" content="https://sandrolenz.ch/img/thumbnail.png">
+
+	<!-- Icons -->
+	<link href="../../img/thumbnail.png" type="image/png" rel="image_src">
+	<link href="../../index.html" rel="canonical">
+
+	<link rel="apple-touch-icon" href="../../img/touch-icon-iphone.png" type="image/png">
+	<link rel="apple-touch-icon" href="../../img/touch-icon-ipad.png" type="image/png" sizes="76x76">
+	<link rel="apple-touch-icon" href="../../img/touch-icon-iphone-retina.png" type="image/png" sizes="120x120">
+	<link rel="apple-touch-icon" href="../../img/touch-icon-ipad-retina.png" type="image/png" sizes="152x152">
+
+	<link rel="icon" href="../../img/favicon-16x16.png" type="image/png" sizes="16x16">
+	<link rel="icon" href="../../img/favicon-32x32.png" type="image/png" sizes="32x32">
+	<link rel="icon" href="../../img/favicon-96x96.png" type="image/png" sizes="96x96">
+
+	<!-- CSS -->
+	<link href="../../css/style.css" rel="stylesheet" type="text/css">
+
+	<!-- Scroll position -->
+	<script type="text/javascript" src="../../js/readingposition.js"></script>
+	<script>
+		var rpi;
+		setTimeout(function waitUntilDomIsReadyLoadingCustomFontsMightOffsetThis() {
+			rpi = new ReadingPositionIndicator({
+				rpiArea: '[reading-position]', /* optional, query selector to an element */
+			}).init();
+		}, 500); 
+	</script>
+
+	<!-- Lazy load -->
+	<!-- Yall: Remove the no-js class on the <html> element if JavaScript is on -->
+	<script>document.documentElement.classList.remove("no-js")</script>
+
+
+</head>
+
+<body>
+	<!-- START Scroll position -->
+	<div class="rpi-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+		<div class="rpi-progress-bar__position" aria-hidden="true"></div>
+		<div class="rpi-progress-bar__percentage"></div>
+	</div>
+	<!-- END Scroll position -->
+
+	<div class="block-image-overflow">
+		<div class="max-width">
+			<div class="logo">
+				<div class="logo-inner">
+					<a href="../index.html">
+						<div class="label-logo on-hover--40 text-color-black"></div>
+					</a>
+				</div>
+			</div>
+
+			<div class="top-bottom-margin" reading-position>
+				<div class="hide-text-block">
+					<h2 class="text-color-black animate">Phonebook</h2>
+				</div>
+				<div class="hide-text-block">
+					<p class="size-medium text-color-gray animate">A school project for M133, where we built an
+						interface for an employee phonebook.
+					</p>
+				</div>
+
+				<div class="hero-image animate delay02">
+					<img draggable="false" class="lazy" src="../../img/image-placeholder.png"
+						data-src="img/phonebook_interface.png">
+					<noscript><img draggable="false" src="img/phonebook_interface.png"></noscript>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h4>M157</h4>
+					<p class="size-large">
+						IT-System-Einführung planen und durchführen
+					</p>
+					<p>
+						In this module we could choose the project ourselves. The idea of an online phonebook came up
+						very quickly since its a simple thing to build.
+					</p>
+					<p>
+						We used HTML and CSS for our interface. Getting the data from the database was done with PHP and
+						a bit of JavaScript.
+					</p>
+					<p class="text-color-gray">
+						You can view more info about the module on the "Modulbaukasten" page. (in German, French or
+						Italian)
+					</p>
+					<div class="links">
+						<a class="on-hover-40 text-color-red" href="https://www.modulbaukasten.ch/module/157/4/de-DE"
+							target="_blank">modulbaukasten.ch</a>
+					</div>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h5>GitHub</h5>
+					<p>
+						The code for this project is available on GitHub.
+					</p>
+					<div class="links">
+						<a class="on-hover-40 text-color-red" href="https://github.com/sandrolenz/M157_Telefonbuch"
+							target="_blank">github.com/sandrolenz</a>
+					</div>
+				</div>
+
+				<div class="images">
+					<img draggable="false" class="lazy" src="../../img/image-placeholder.png"
+						data-src="img/github_overview.png">
+					<noscript><img draggable="false" src="img/github_overview.PNG"></noscript>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Yall -->
+	<script src="https://polyfill.io/v2/polyfill.minc677.js?features=IntersectionObserver"></script>
+	<script src="../../js/yall.min.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", yall);
+	</script>
+
+</body>
+
+</html>
