@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<!-- Regular data -->
+	<meta charset="utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+	<!-- Description -->
+	<meta name="author" content="Sandro Lenz" />
+	<meta name="description" content="I'm an IT-Apprentice from Switzerland" />
+	<meta name="keywords" content="sandro,lenz,sandro lenz" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Sandro Lenz">
+	<meta name="twitter:description" content="I'm an IT-Apprentice from Switzerland">
+	<meta name="twitter:url" content="https://sandrolenz.ch">
+	<meta name="twitter:image" content="https://sandrolenz.ch/img/thumbnail.png">
+
+	<!-- Icons -->
+	<link href="../../img/thumbnail.png" type="image/png" rel="image_src">
+	<link href="../../index.html" rel="canonical">
+
+	<link rel="icon" href="../../img/favicon-32x32.png" type="image/png">
+
+	<!-- Title -->
+	<title>M226a - Sandro Lenz</title>
+
+	<!-- CSS -->
+	<link href="../../css/style.css" rel="stylesheet" type="text/css">
+
+	<!-- Scroll position -->
+	<script type="text/javascript" src="../../js/readingposition.js"></script>
+	<script>
+		var rpi;
+		setTimeout(function waitUntilDomIsReadyLoadingCustomFontsMightOffsetThis() {
+			rpi = new ReadingPositionIndicator({
+				rpiArea: '[reading-position]', /* optional, query selector to an element */
+			}).init();
+		}, 500); 
+	</script>
+
+	<!-- Lazy load -->
+	<!-- Yall: Remove the no-js class on the <html> element if JavaScript is on -->
+	<script>document.documentElement.classList.remove("no-js")</script>
+
+
+</head>
+
+<body>
+	<!-- START Scroll position -->
+	<div class="rpi-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+		<div class="rpi-progress-bar__position" aria-hidden="true"></div>
+		<div class="rpi-progress-bar__percentage"></div>
+	</div>
+	<!-- END Scroll position -->
+
+	<div class="block-image-overflow">
+		<div class="max-width">
+			<div class="logo">
+				<div class="logo-inner">
+					<a href="../index.html">
+						<div class="label-logo on-hover--40 text-color-black"></div>
+					</a>
+				</div>
+			</div>
+
+			<div class="top-bottom-margin" reading-position>
+				<div class="hide-text-block">
+					<h2 class="text-color-black animate">Dwarven Gold</h2>
+				</div>
+				<div class="hide-text-block">
+					<p class="size-medium text-color-gray animate">A school project for M226a, where we could create our own game using Greenfoot.
+					</p>
+				</div>
+
+				<div class="hero-image animate delay02">
+					<img draggable="false" src="img/final-game.png">
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h4>M226a</h4>
+					<p class="size-large">
+						Klassenbasiert (ohne Vererbung) implementieren
+					</p>
+					<p>
+						In this module we used Greenfoot to solve tasks from a book and learn programming in Java. At the end of the module, we could create a game of our own choice.
+					</p>
+					</p>
+					<p class="text-color-gray">
+						You can view more info about the module on the "Modulbaukasten" page. (in German, French or
+						Italian)
+					</p>
+					<div class="links">
+						<a class="on-hover-40 text-color-red" href="https://www.modulbaukasten.ch/module/226a/3/de-DE"
+							target="_blank">modulbaukasten.ch</a>
+					</div>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h5>The game</h5>
+					<p>
+						The game is about a dwarf mining his way through the earth in hopes of finding gold and other valuables. To make the game interesting, there will be enemys that randomly spawn while mining. Once you get killed or the pickaxe breaks, the game will end and you get a score.
+					</p>
+					<p>
+						The world is randomly generated and each time you play will be a little different.
+					</p>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h5>Concept Art</h5>
+					<p>
+						Before we started working on the game, we created a simple concept to see how the game would look like. Since this is just a very small game, we didn't go into much detail for it.
+					</p>
+					<div class="images">
+						<img draggable="false" src="img/concept-art.png">
+					</div>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h4>Menus</h4>
+					<p>
+						To display the games instructions, we created a simple main menu. The main menu is displayed when you open the game. You can then start the game by pressing "Enter" on the keyboard.
+					</p><div class="images">
+						<img draggable="false" src="img/MainMenu.png">
+					</div>
+
+					<p>
+						When the game ends, the game over menu is displayed. It shows why the game ended and how high your score is. You can then restart the game by pressing "R" on the keyboard.
+					</p><div class="images">
+						<img draggable="false" src="img/GameOver.png">
+					</div>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h4>Instructions</h4>
+					<p>
+						The game is very simple to play. You just need to use WASD or the arrow keys to move around and you can break blocks around you by left-clicking on them.
+					</p>
+					<p>
+						<ul>
+							<li>Use WASD or the Arrow Keys to move</li>
+							<li>Try to find as many ores as you can, before the pickaxe breaks</li>
+							<li>But beware of the spiders that hide deep underground</li>
+						</ul>
+					</p>
+					<p>
+						Unfortunately, we were not able to make the spiders visible when you encounter them. If you hit one, the game just plays the sound and you loose 1 health point.
+					</p>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h4>Play the game</h4>
+					<p>
+						If you're interested in testing out the game for yourself, you can download it from my GitHub and open it with Greenfoot.
+					</p>
+					<div class="links">
+						<a class="on-hover-40 text-color-red" href="https://github.com/sandrolenz/M226a-DwarvenGold"
+							target="_blank">github.com/sandrolenz</a>
+						<a class="on-hover-40 text-color-red" href="https://www.greenfoot.org/download"
+							target="_blank">greenfoot.org/download</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
