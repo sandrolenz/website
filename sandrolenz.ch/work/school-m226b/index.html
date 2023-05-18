@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<!-- Regular data -->
+	<meta charset="utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+	<!-- Description -->
+	<meta name="author" content="Sandro Lenz" />
+	<meta name="description" content="I'm an IT-Apprentice from Switzerland" />
+	<meta name="keywords" content="sandro,lenz,sandro lenz" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Sandro Lenz">
+	<meta name="twitter:description" content="I'm an IT-Apprentice from Switzerland">
+	<meta name="twitter:url" content="https://sandrolenz.ch">
+	<meta name="twitter:image" content="https://sandrolenz.ch/img/thumbnail.png">
+
+	<!-- Icons -->
+	<link href="../../img/thumbnail.png" type="image/png" rel="image_src">
+	<link href="../../index.html" rel="canonical">
+
+	<link rel="icon" href="../../img/favicon-32x32.png" type="image/png">
+
+	<!-- Title -->
+	<title>M226b - Sandro Lenz</title>
+
+	<!-- CSS -->
+	<link href="../../css/style.css" rel="stylesheet" type="text/css">
+
+	<!-- Scroll position -->
+	<script type="text/javascript" src="../../js/readingposition.js"></script>
+	<script>
+		var rpi;
+		setTimeout(function waitUntilDomIsReadyLoadingCustomFontsMightOffsetThis() {
+			rpi = new ReadingPositionIndicator({
+				rpiArea: '[reading-position]', /* optional, query selector to an element */
+			}).init();
+		}, 500); 
+	</script>
+
+	<!-- Lazy load -->
+	<!-- Yall: Remove the no-js class on the <html> element if JavaScript is on -->
+	<script>document.documentElement.classList.remove("no-js")</script>
+
+
+</head>
+
+<body>
+	<!-- START Scroll position -->
+	<div class="rpi-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+		<div class="rpi-progress-bar__position" aria-hidden="true"></div>
+		<div class="rpi-progress-bar__percentage"></div>
+	</div>
+	<!-- END Scroll position -->
+
+	<div class="block-image-overflow">
+		<div class="max-width">
+			<div class="logo">
+				<div class="logo-inner">
+					<a href="../index.html">
+						<div class="label-logo on-hover--40 text-color-black"></div>
+					</a>
+				</div>
+			</div>
+
+			<div class="top-bottom-margin" reading-position>
+				<div class="hide-text-block">
+					<h2 class="text-color-black animate">Burger Place</h2>
+				</div>
+				<div class="hide-text-block">
+					<p class="size-medium text-color-gray animate">A school project for M226b, where created a game using Greenfoot.</p>
+				</div>
+
+				<div class="hero-image animate delay02">
+					<img draggable="false" src="img/game.png">
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h4>M226b</h4>
+					<p class="size-large">
+						Objektorientiert (mit Vererbung) implementieren
+					</p>
+					<p>
+						This module builds on M226a. We used the things we learned in that module to create a game of our own choice. In addition, we also had to plan and document it using class diagrams ect.
+					</p>
+					<p>
+						The game idea and the concept including class diagrams were created in teams. The game itself was an individual work, which means that you are able to find two versions of this game on GitHub.
+					</p>
+					</p>
+					<p class="text-color-gray">
+						You can view more info about the module on the "Modulbaukasten" page. (in German, French or Italian)
+					</p>
+					<div class="links">
+						<a class="on-hover-40 text-color-red" href="https://www.modulbaukasten.ch/module/226b/3/de-DE"
+							target="_blank">modulbaukasten.ch</a>
+					</div>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h5>The game</h5>
+					<p>
+						This is very simple game where you work as a cook in a restaurant and serve burgers to your customers.
+					</p>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h5>Concept Art</h5>
+					<p>
+						Before we started working on the game, we created a simple concept to see how the game would look like. Since this is just a small game, we didn't go into much detail for it.
+					</p>
+					<div class="images">
+						<img draggable="false" src="img/concept.png">
+					</div>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h4>Menus</h4>
+					<p>
+						To display the games instructions, I created a simple main menu. The main menu is displayed when you open the game. You can then start the game by pressing "Enter" on the keyboard.
+					</p><div class="images">
+						<img draggable="false" src="img/MainMenu.png">
+					</div>
+
+					<p>
+						When the day ends, a simple menu is displayed. It shows how many customers you served and the amount of money you have. You can then start the next day by pressing "Enter" or end the game with "ESC".
+					</p><div class="images">
+						<img draggable="false" src="img/EndScreen.PNG">
+					</div>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h4>Instructions</h4>
+					<p>
+						The game is very simple to play. You only have to use your mouse and drag&drop the ingredients for your burger.
+					</p>
+					<p>
+						<ul>
+							<li>Once a customer orders a burger, make that burger by dragging the ingredients onto the plate in the right order.</li>
+							<li>When you're done, click the bell to serve the burger.</li>
+							<li>If you work faster, you'll get a higher tip.</li>
+							<li>The game has a defined daylength, if its over, the end screen appears and you can choose to continue with the next day or end the game.</li>
+						</ul>
+					</p>
+				</div>
+
+				<div class="max-width-70 text-color-black">
+					<h4>Play the game</h4>
+					<p>
+						If you're interested in testing out the game for yourself, you can download it from my GitHub and open it with Greenfoot.
+					</p>
+					<div class="links">
+						<a class="on-hover-40 text-color-red" href="https://github.com/sandrolenz/M226b-BurgerPlace"
+							target="_blank">github.com/sandrolenz</a>
+						<a class="on-hover-40 text-color-red" href="https://www.greenfoot.org/download"
+							target="_blank">greenfoot.org/download</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
