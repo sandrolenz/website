@@ -1,0 +1,348 @@
+:root {
+  --slate: #031319;
+  --slate-light: #06232e;
+  --scute: #22b14d;
+  --shell: #eaeaea;
+  --font-main: "Courier New", Courier, monospace;
+}
+
+/* --- GLOBAL RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--slate);
+  color: var(--shell);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: var(--scute);
+  transition: 0.3s;
+}
+a:hover {
+  color: var(--shell);
+  text-shadow: 0 0 10px var(--scute);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- NAV --- */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 5%;
+  background: rgba(3, 19, 25, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(34, 177, 77, 0.2);
+  opacity: 0;
+  animation: fadeIn 1s 2.5s forwards;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo span {
+  color: var(--scute);
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+/* --- HERO --- */
+header {
+  min-height: 100vh; /* min-height for safer mobile sizing */
+  display: flex;
+  align-items: center;
+  padding: 100px 10% 0; /* padding for navbar space */
+}
+
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 50px;
+}
+
+.hero-text-block {
+  flex: 1;
+  max-width: 600px;
+}
+
+.terminal-window {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  color: var(--scute);
+  min-height: 1.2em; /* Keep height stable before typewriter */
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: var(--scute);
+  animation: blink 1s infinite;
+}
+
+.hero-sub {
+  margin-top: 20px;
+  color: var(--shell);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1s 3s forwards;
+}
+
+.hero-image-block {
+  flex: 0 0 300px; /* Fixed width for desktop */
+  display: flex;
+  justify-content: center;
+}
+
+.profile-frame {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  border: 2px solid var(--shell);
+  padding: 12px;
+  opacity: 0;
+  transform: translateX(50px);
+  /* Slide in after text finishes */
+  animation: slideInRight 1s 3.2s forwards;
+  transition: border-color 0.3s ease;
+}
+
+.profile-frame::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background: var(--scute);
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  filter: brightness(50%);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* --- HOVER EFFECTS --- */
+.profile-frame:hover {
+  border-color: var(--scute);
+}
+
+.profile-frame:hover .profile-img {
+  filter: brightness(100%);
+  /* filter: grayscale(100%) contrast(1.1); */
+  transform: translate(-8px, -8px); 
+}
+
+.profile-frame:hover::before {
+  opacity: 0.4;
+  transform: translate(
+    8px,
+    8px
+  ); 
+}
+
+.btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid var(--scute);
+  color: var(--scute);
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 1s 3.5s forwards;
+}
+.btn:hover {
+  background: var(--scute);
+  color: var(--slate);
+  box-shadow: 0 0 15px var(--scute);
+}
+
+/* --- SECTIONS --- */
+section {
+  padding: 80px 10%;
+  min-height: 80vh;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  border-left: 5px solid var(--scute);
+  padding-left: 20px;
+}
+
+/* --- ABOUT --- */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.cv-code-block {
+  color: var(--scute);
+  background: #000;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  overflow-x: auto;
+}
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.tag {
+  background: var(--slate-light);
+  border: 1px solid var(--scute);
+  padding: 5px 15px;
+  font-size: 0.9rem;
+}
+
+/* --- PROJECTS --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.project-card {
+  background: var(--slate-light);
+  border: 1px solid #1a2f36;
+  padding: 25px;
+  transition: 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--scute);
+  box-shadow: 0 5px 20px rgba(34, 177, 77, 0.1);
+}
+.project-header {
+  color: var(--scute);
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.project-desc {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* --- CONTACT --- */
+.contact-container {
+  max-width: 600px;
+  background: var(--slate-light);
+  padding: 40px;
+  margin-bottom: 20px;
+  border-top: 2px solid var(--scute);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input,
+textarea {
+  background: var(--slate);
+  border: 1px solid #1a2f36;
+  padding: 15px;
+  color: var(--shell);
+  font-family: var(--font-main);
+  outline: none;
+}
+input:focus,
+textarea:focus {
+  border-color: var(--scute);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #1a2f36;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .hero-grid {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .hero-text-block {
+    order: 2;
+  } 
+  .hero-image-block {
+    order: 1;
+    flex: auto;
+  } 
+  .profile-frame {
+    width: 200px;
+    height: 200px;
+  } 
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  .nav-links {
+    display: none;
+  } 
+  .cv-code-block {
+    display: none;
+  }
+  header,
+  section {
+    padding: 80px 5%;
+  }
+}
