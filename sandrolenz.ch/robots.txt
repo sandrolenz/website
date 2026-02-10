@@ -1,0 +1,10 @@
+User-agent: baiduspider
+Disallow: /
+User-agent: naverbot
+Disallow: /
+User-agent: *
+Disallow: 
+Disallow: /assets/bootstrap-icons/
+Disallow: /assets/fonts/
+Disallow: /assets/js
+Sitemap: https://sandrolenz.ch/sitemap.xml
