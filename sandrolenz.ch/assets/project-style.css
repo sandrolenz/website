@@ -1,27 +1,27 @@
 @font-face {
 	font-family: 'Regular';
-	src: url('../fonts/Graphik-Regular.eot');
-	src: url('../fonts/Graphik-Regulard41d.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Graphik-Regular.woff') format('woff'),
-		url('../fonts/Graphik-Regular.ttf') format('truetype');
+	src: url('fonts/Graphik-Regular.eot');
+	src: url('fonts/Graphik-Regulard41d.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Graphik-Regular.woff') format('woff'),
+		url('fonts/Graphik-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Semibold';
-	src: url('../fonts/Graphik-Semibold.eot');
-	src: url('../fonts/Graphik-Semiboldd41d.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Graphik-Semibold.woff') format('woff'),
-		url('../fonts/Graphik-Semibold.ttf') format('truetype');
+	src: url('fonts/Graphik-Semibold.eot');
+	src: url('fonts/Graphik-Semiboldd41d.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Graphik-Semibold.woff') format('woff'),
+		url('fonts/Graphik-Semibold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Medium';
-	src: url('../fonts/Graphik-Medium.eot');
-	src: url('../fonts/Graphik-Mediumd41d.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Graphik-Medium.woff') format('woff'),
-		url('../fonts/Graphik-Medium.ttf') format('truetype');
+	src: url('fonts/Graphik-Medium.eot');
+	src: url('fonts/Graphik-Mediumd41d.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Graphik-Medium.woff') format('woff'),
+		url('fonts/Graphik-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
@@ -83,7 +83,7 @@ html, body {
 	color: #ffffff;
 }
 .text-color-red {
-	color: #55ebff;
+	color: #22b14d;
 }
 .text-color-black {
 	color: #000000;
@@ -249,7 +249,7 @@ a.text-color-white, a.text-color-white:after, a.text-color-white:visited {
 }
 
 a.text-color-red, a.text-color-red:after, a.text-color-red:visited {
-	color: #55ebff;
+	color: #22b14d;
 }
 
 /* ------ Hover states ------ */
@@ -369,7 +369,7 @@ video {
 	box-sizing:inherit;
 	height:4px; /* control the height of the progress bar */
 	width:100%;
-	background-color: #55ebff;
+	background-color: #22b14d;
 	-webkit-transform-origin:0 50%;
 	transform-origin:0 50%;
 	-webkit-transition:-webkit-transform 50ms;
