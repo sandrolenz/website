@@ -184,7 +184,7 @@ section {
   padding: 80px 10%;
   min-height: 80vh;
 }
-h2 {
+h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
   border-left: 5px solid var(--scute);
@@ -231,6 +231,8 @@ h2 {
   gap: 30px;
 }
 .project-card {
+  display: flex;
+  flex-direction: column;
   background: var(--slate-light);
   border: 1px solid #1a2f36;
   padding: 25px;
@@ -252,8 +254,11 @@ h2 {
 }
 .project-desc {
   font-size: 0.9rem;
-  color: #aaa;
+  color: var(--dark-shell);
   margin-bottom: 20px;
+}
+.project-links {  
+  margin-top: auto;
 }
 
 /* --- CONTACT --- */
@@ -361,7 +366,7 @@ footer {
   .profile-frame {
     width: 200px;
     height: 200px;
-  }
+  } 
   .nav-links {
     display: none;
   } 
